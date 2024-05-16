@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kufato <kufato@student.42.fr>              +#+  +:+       +#+        */
+/*   By: axcallet <axcallet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 13:26:30 by axcallet          #+#    #+#             */
-/*   Updated: 2024/05/16 14:43:02 by kufato           ###   ########.fr       */
+/*   Updated: 2024/05/16 15:13:52 by axcallet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t	nb;
 
 	nb = nmemb * size;
+	if ((nmemb >= 65535 && size >= 65535))
+		return (NULL);
 	if (nmemb == 0 || size == 0)
 		return (malloc(0));
 	ptr = malloc(nb);
