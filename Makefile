@@ -6,7 +6,7 @@
 #    By: kufato <kufato@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/28 11:03:06 by axcallet          #+#    #+#              #
-#    Updated: 2024/05/16 14:33:18 by kufato           ###   ########.fr        #
+#    Updated: 2024/05/16 14:42:34 by kufato           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,6 @@ CFLAGS	= -Wall -Wextra -Werror
 
 OBJS		= $(SRCS:.c=.o)
 OBJS_ALL	= $(SRCS_ALL:.c=.o)
-OBJS_BONUS	= $(SRCS_BONUS:.c=.o) 
 SRCS		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
 			  ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 			  ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c \
