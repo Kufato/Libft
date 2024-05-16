@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: axcallet <axcallet@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kufato <kufato@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 17:38:26 by axcallet          #+#    #+#             */
-/*   Updated: 2022/10/12 11:48:33 by axcallet         ###   ########.fr       */
+/*   Updated: 2024/05/16 13:59:47 by kufato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,5 @@ char	*ft_strdup(const char *s)
 		dest[i] = s[i];
 		i++;
 	}
-	dest[i] = '\0';
 	return (dest);
 }
